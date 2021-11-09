@@ -31,48 +31,48 @@ public class RegistrationPage {
         open("https://demoqa.com/automation-practice-form");
     }
 
-    public RegistrationPage setFirstName(String value){
-        firstNameInput.setValue(value);
+    public RegistrationPage setFirstName(String firstName){
+        firstNameInput.setValue(firstName);
         return this;
     }
 
-    public RegistrationPage setLastName(String value){
-        lastNameInput.setValue(value);
+    public RegistrationPage setLastName(String lastName){
+        lastNameInput.setValue(lastName);
         return this;
     }
 
-    public RegistrationPage setEmail(String value){
-        emailInput.setValue(value);
+    public RegistrationPage setEmail(String email){
+        emailInput.setValue(email);
         return this;
     }
 
-    public RegistrationPage chooseGender(String value) {
-        $(byText(value)).click();
+    public RegistrationPage chooseGender(String gender) {
+        $(byText(gender)).click();
         return this;
     }
 
-    public RegistrationPage setMobile(String value){
-        mobileInput.setValue(value);
+    public RegistrationPage setMobile(String mobileNumber){
+        mobileInput.setValue(mobileNumber);
         return this;
     }
 
-    public RegistrationPage setSubject(String value){
-        subjectsInput.setValue(value).pressEnter();
+    public RegistrationPage setSubject(String subject){
+        subjectsInput.setValue(subject).pressEnter();
         return this;
     }
 
-    public RegistrationPage setHobby(String value){
-        $(byText(value)).click();
+    public RegistrationPage setHobby(String hobby){
+        $(byText(hobby)).click();
         return this;
     }
 
-    public RegistrationPage uploadPicture(String value){
-        pictureSelect.uploadFromClasspath(value);
+    public RegistrationPage uploadPicture(String picture){
+        pictureSelect.uploadFromClasspath(picture);
         return this;
     }
 
-    public RegistrationPage setAddress(String value){
-        addressInput.setValue(value);
+    public RegistrationPage setAddress(String address){
+        addressInput.setValue(address);
         return this;
     }
 
