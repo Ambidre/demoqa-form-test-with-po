@@ -3,7 +3,7 @@ package gmail.anastasiacoder.test;
 import org.junit.jupiter.api.Test;
 import static gmail.anastasiacoder.test.TestData.*;
 
-public class FormTestPageObjects extends TestBase{
+public class FormPageObjectsTest extends TestBase{
 
     @Test
     public void fillOutFormWithRealDataTest() {
