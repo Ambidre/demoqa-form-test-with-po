@@ -18,8 +18,8 @@ public class FormTestPageObjects extends TestBase{
                         .setHobby(HOBBY_MUSIC)
                         .uploadPicture(PICTURE)
                         .setAddress(ADDRESS)
-                        .chooseState()
-                        .chooseCity()
+                        .chooseState(STATE)
+                        .chooseCity(CITY)
                         .clickSubmitButton()
                         .checkTitle();
 

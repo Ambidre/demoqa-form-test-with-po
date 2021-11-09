@@ -18,9 +18,7 @@ public class RegistrationPage {
             pictureSelect = $("#uploadPicture"),
             addressInput = $("#currentAddress"),
             stateSelect = $(byText("Select State")),
-            stateName = $(byText("NCR")),
             citySelect = $(byText("Select City")),
-            cityName = $(byText("Noida")),
             submitButton = $("#submit"),
             submitTitle = $("#example-modal-sizes-title-lg"),
             resultsTable = $(".table-responsive");
@@ -76,15 +74,15 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage chooseState(){
+    public RegistrationPage chooseState(String stateName){
         stateSelect.click();
-        stateName.click();
+        $(byText(stateName)).click();
         return this;
     }
 
-    public RegistrationPage chooseCity(){
+    public RegistrationPage chooseCity(String cityName){
         citySelect.click();
-        cityName.click();
+        $(byText(cityName)).click();
         return this;
     }
 
