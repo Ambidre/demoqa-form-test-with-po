@@ -1,7 +1,9 @@
-package gmail.anastasiacoder.PageObjects;
+package pageObjects;
+
 
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -27,7 +29,7 @@ public class RegistrationPage {
 
     public CalendarComponent calendar = new CalendarComponent();
 
-    public void openPage( ){
+    public void openPage(){
         open("https://demoqa.com/automation-practice-form");
     }
 
@@ -72,7 +74,9 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setAddress(String address){
-        addressInput.setValue(address);
+        addressInput
+                    .scrollTo()
+                    .setValue(address);
         return this;
     }
 
@@ -93,8 +97,8 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage checkTitle(){
-        submitTitle.shouldHave(text(RESULT_TITLE));
+    public RegistrationPage checkPopapTitle(){
+        submitTitle.shouldHave(exactText(RESULT_TITLE));
         return this;
     }
 
