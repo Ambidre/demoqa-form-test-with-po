@@ -1,7 +1,9 @@
 package gmail.anastasiacoder.test;
 
 import com.codeborne.selenide.Configuration;
+
 import gmail.anastasiacoder.PageObjects.RegistrationPage;
+
 import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
@@ -10,6 +12,6 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1920x1080";
     }
 }
