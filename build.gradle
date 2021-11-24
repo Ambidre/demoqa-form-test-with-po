@@ -9,13 +9,17 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    junit = "5.8.0"
+}
+
 dependencies {
-    implementation 'junit:junit:4.13.1'
-    testImplementation (
-            "com.codeborne:selenide:5.25.0",
-            "com.github.javafaker:javafaker:0.12",
-            "org.junit.jupiter:junit-jupiter-api:5.8.0")
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.0"
+    implementation (
+            'junit:junit:4.13.1',
+             'com.codeborne:selenide:5.25.0',
+             'com.github.javafaker:javafaker:1.0.2')
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit"
 }
 
 test {

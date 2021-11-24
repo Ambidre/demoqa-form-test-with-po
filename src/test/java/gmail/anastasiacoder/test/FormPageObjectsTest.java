@@ -1,13 +1,16 @@
 package gmail.anastasiacoder.test;
 
+import gmail.anastasiacoder.test.base.TestBase;
 import org.junit.jupiter.api.Test;
+import pageObjects.RegistrationPage;
 
-import static gmail.anastasiacoder.test.TestData.*;
+import static utils.TestData.*;
 
-public class FormPageObjectsTest extends TestBase{
-
+public class FormPageObjectsTest extends TestBase {
+    private RegistrationPage registrationPage;
     @Test
     public void fillOutFormWithRealDataTest() {
+        registrationPage = new RegistrationPage();
         registrationPage.openPage();
         registrationPage.calendar.setDate("11","May","1999");
         registrationPage.setFirstName(FIRST_NAME)
@@ -22,7 +25,7 @@ public class FormPageObjectsTest extends TestBase{
                         .chooseState(STATE)
                         .chooseCity(CITY)
                         .clickSubmitButton()
-                        .checkTitle();
+                        .checkPopapTitle();
 
         registrationPage.checkInformation("Student Name", FIRST_NAME + " " + LAST_NAME)
                 .checkInformation("Student Email", USER_EMAIL)
