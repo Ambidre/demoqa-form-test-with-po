@@ -1,12 +1,14 @@
 package gmail.anastasiacoder.PageObjects;
 
 import com.codeborne.selenide.SelenideElement;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class RegistrationPage {
+
     private final static String RESULT_TITLE = "Thanks for submitting the form";
 
     private SelenideElement

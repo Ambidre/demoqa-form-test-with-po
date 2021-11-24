@@ -1,4 +1,5 @@
 package gmail.anastasiacoder.test;
+
 import com.github.javafaker.Faker;
 
 public class TestData {
@@ -14,6 +15,8 @@ public class TestData {
             USER_NUMBER = "9998887766",
             DATE_OF_BIRTH = "11 May,1999",
             SUBJECT = "Computer Science",
+            HOBBY_SPORT = "Sports",
+            HOBBY_READING = "Reading",
             HOBBY_MUSIC = "Music",
             PICTURE = "Test.jpg",
             STATE = "NCR",
