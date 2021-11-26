@@ -23,7 +23,6 @@ allure {
 
 dependencies {
     implementation (
-            'junit:junit:4.13.1',
             'com.codeborne:selenide:5.25.0',
             'com.github.javafaker:javafaker:1.0.2'
     )
