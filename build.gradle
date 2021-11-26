@@ -20,7 +20,6 @@ allure {
     }
 }
 
-
 dependencies {
     implementation (
             'com.codeborne:selenide:5.25.0',
@@ -29,10 +28,10 @@ dependencies {
     testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.1",
             'io.qameta.allure:allure-selenide:2.16.1'
     )
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
+    testRuntimeOnly(
+            "org.slf4j:slf4j-simple:1.7.29",
+            'org.junit.jupiter:junit-jupiter-engine:5.8.1')
 }
-
-
 
 tasks.withType(Test) {
     useJUnitPlatform()
