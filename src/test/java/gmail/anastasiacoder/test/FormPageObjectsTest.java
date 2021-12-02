@@ -1,11 +1,13 @@
 package gmail.anastasiacoder.test;
 
 import gmail.anastasiacoder.test.base.TestBase;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pageObjects.RegistrationPage;
 
 import static utils.TestData.*;
 
+@Tag("form_page")
 public class FormPageObjectsTest extends TestBase {
     private RegistrationPage registrationPage;
     @Test
