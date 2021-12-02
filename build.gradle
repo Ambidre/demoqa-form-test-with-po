@@ -28,6 +28,7 @@ dependencies {
     implementation (
             "org.aspectj:aspectjweaver:1.9.6",
             "com.codeborne:selenide:$selenideVersion",
+            "org.aeonbits.owner:owner:1.0.12",
             "com.github.javafaker:javafaker:1.0.2"
     )
     testImplementation ("org.junit.jupiter:junit-jupiter-api:$junitVersion",
