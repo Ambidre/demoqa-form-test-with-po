@@ -1,4 +1,4 @@
-package gmail.anastasiacoder.test.helpers;
+package gmail.anastasiacoder.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
