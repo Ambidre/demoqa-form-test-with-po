@@ -21,7 +21,7 @@ public class TestBase {
                 (CredentialsConfig) ConfigFactory.create(CredentialsConfig.class);
         String login = credentials.login();
         String password = credentials.password();
-        String url = credentials.url();
+        String url = System.getProperty("url", null);
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.browserSize = "1920x1080";
