@@ -20,7 +20,7 @@ public class FormPageObjectsTest extends TestBase {
                         .setMobile(USER_NUMBER)
                         .setSubject(SUBJECT)
                         .setHobby(HOBBY_MUSIC)
-                        .uploadPicture(PICTURE)
+                        .uploadPicture("img/" + PICTURE)
                         .setAddress(ADDRESS)
                         .chooseState(STATE)
                         .chooseCity(CITY)
